@@ -12,11 +12,11 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md">
+    <nav class="navbar navbar-expand-md min-vh-10">
       <div class="container">
-        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks">
           <span class="navbar-toggler-icon"></span>
-        </button> -->
+        </button>
         <a class="navbar-brand" href="#">Austrália</a>
         <ul class="navbar-nav" id="navbarLinks">
           <li class="nav-item">
@@ -39,65 +39,49 @@
     </nav>
   </header>
   <main>
-    <div class="container">
-      <section id="heroSection" class="d-flex flex-column justify-content-center align-items-center">
+    <section id="heroSection" class="min-vh-90">
+      <!-- <div class="h-25"></div> -->
+      <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
         <h1>Austrália</h1>
         <a href="#linkCards" class="btn btn-primary">Conhecer Mais!</a>
-      </section>
-      <section id="linkCards" class="d-flex flex-column justify-content-center align-items-center">
-        <h2>Conheça a Austrália</h2>
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="card">
-              <img src="..." class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Cultura</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                <a href="pages/culture.html" class="btn btn-primary">Conhecer</a>
+      </div>
+    </section>
+    <section id="linkCards" class="min-vh-100 d-flex align-items-center">
+      <div class="container h-100 px-5">
+        <div class="images-row row">
+          <div class="col-md-6 p-2">
+            <div class="h-100 rounded-4 d-flex justify-content-center teste" id="cultureDiv">
+              <div class="w-100 bg-primary align-self-end rounded-bottom-4">
+                <h2 class="text-center text-white">Cultura</h2>
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
-            <div class="card">
-              <img src="..." class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Cidades</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                <a href="pages/cities.html" class="btn btn-primary">Conhecer</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="card">
-              <img src="..." class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Onde Ir</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                <a href="pages/places.html" class="btn btn-primary">Conhecer</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="card">
-              <img src="..." class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Estatísticas</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                <a href="pages/statistics.html" class="btn btn-primary">Conhecer</a>
+          <div class="col-md-6 p-2 ">
+            <div class="h-100 rounded-4 d-flex justify-content-center teste" id="citiesDiv">
+              <div class="w-100 bg-primary align-self-end rounded-bottom-4">
+                <h2 class="text-center text-white">Cidades</h2>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+        <div class="images-row row">
+          <div class="col-md-6 p-2 ">
+            <div class="h-100 rounded-4 d-flex justify-content-center teste" id="placesDiv">
+              <div class="w-100 bg-primary align-self-end rounded-bottom-4">
+                <h2 class="text-center text-white">Onde Ir</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 p-2 ">
+            <div class="h-100 rounded-4 d-flex justify-content-center teste" id="statisticsDiv">
+              <div class="w-100 bg-primary align-self-end rounded-bottom-4">
+                <h2 class="text-center text-white">Dados e Estatísticas</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
     <div class="container text-center">

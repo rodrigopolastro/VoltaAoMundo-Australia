@@ -11,7 +11,7 @@ Desc: "Que corte de cabelo legal, você foi atropelado por um cortador de grama?
 
 ### Povos Originários
 
-Os povos aborígenes da Austrália exercem uma influência profunda e duradoura na cultura do país. Com uma história que remonta a milhares de anos, eles têm uma conexão intrínseca com a terra e uma rica herança de tradições transmitidas através de gerações. Sua arte, notavelmente expressa por meio de pinturas rupestres e padrões simbólicos, não só reflete sua espiritualidade e identidade cultural, mas também influenciou significativamente a arte contemporânea australiana. Além disso, a música e a dança aborígenes desempenham um papel importante na celebração da cultura e na preservação das histórias ancestrais.
+Os povos originários aborígenes da Austrália exercem uma influência profunda e duradoura na cultura do país. Com uma história que remonta a milhares de anos, eles têm uma conexão intrínseca com a terra e uma rica herança de tradições transmitidas através de gerações. Sua arte, notavelmente expressa por meio de pinturas rupestres e padrões simbólicos, não só reflete sua espiritualidade e identidade cultural, mas também influenciou significativamente a arte contemporânea australiana. Além disso, a música e a dança aborígenes desempenham um papel importante na celebração da cultura e na preservação das histórias ancestrais.
 
 Apesar dos desafios enfrentados ao longo da história, os povos aborígenes continuam a desempenhar um papel vital na diversidade cultural da Austrália, relembrando-nos da importância de honrar e preservar suas tradições milenares.
 

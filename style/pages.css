@@ -83,13 +83,13 @@ a:hover {
   color: white;
 }
 
-section {
+html, body, section {
   background-color: #e5e5e5;
 }
 
 
 footer{
-  background-color: rgb(3, 3, 58);;
+  background-color: rgb(3, 3, 58);
   height: 20vh;
   display: flex;
   align-items: center;
@@ -98,4 +98,8 @@ footer{
 footer p {
   font-weight: 500;
   color: white;
+}
+
+.blue-section{
+  color: rgb(194, 194, 194);
 }

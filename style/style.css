@@ -14,37 +14,36 @@
   height: 45vh;
 }
 
-#heroSection{
-  background-image: url("../images/home/australia_slide_1.jpg");
+.bg-cover{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  /* text-decoration: none; */
+}
+
+.link-card:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: all 300ms ease;
+}
+
+
+#heroSection{
+  background-image: url("../images/home/australia_slide_1.jpg");
 }
 
 #cultureDiv{
   background-image: url("../images/culture/aborigenal_people.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 #citiesDiv{
   background-image: url("../images/cities/sidney_cover.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 #placesDiv{
   background-image: url("../images/places/uluru.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 #statisticsDiv{
   background-image: url("../images/home/australia_flag.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }

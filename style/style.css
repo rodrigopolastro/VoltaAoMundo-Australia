@@ -1,5 +1,13 @@
+.vh-45{
+  height: 45vh;
+}
+
 .vh-90{
   height: 90vh;
+}
+
+.min-vh-90{
+  min-height:90vh;
 }
 
 .min-vh-10{
@@ -61,4 +69,28 @@
 
 td:first-child {
   font-weight: 650;
+}
+
+#adelaide{
+  background-image: url("../images/cities/adelaide_cover.webp");
+}
+
+#brisbane{
+  background-image: url("../images/cities/brisbane_cover.jpg");
+}
+
+#gold_coast{
+  background-image: url("../images/cities/gold_coast_cover.jpg");
+}
+
+#melbourne{
+  background-image: url("../images/cities/melbourne_cover.jpg");
+}
+
+#perth{
+  background-image: url("../images/cities/perth_cover.jpg");
+}
+
+#sidney{
+  background-image: url("../images/cities/sidney_cover.jpg");
 }

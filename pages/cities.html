@@ -46,42 +46,48 @@
         <div class="min-vh-90">
           <div class="row">
             <div class="vh-45 p-2 col-sm-12 col-md-6 col-lg-4">
-              <div id="adelaide" class="bg-cover h-100 d-flex rounded-bottom-4">
+              <div id="adelaide" class="link-card bg-cover h-100 d-flex rounded-4" data-bs-toggle="modal"
+                data-bs-target="#adelaideModal">
                 <div class="w-100 bg-primary align-self-end rounded-bottom-4">
                   <h2 class="text-center text-white">Adelaide</h2>
                 </div>
               </div>
             </div>
             <div class="vh-45 p-2 col-sm-12 col-md-6 col-lg-4">
-              <div id="brisbane" class="bg-cover h-100 d-flex rounded-bottom-4">
+              <div id="brisbane" class="link-card bg-cover h-100 d-flex rounded-4" data-bs-toggle="modal"
+                data-bs-target="#brisbaneModal">
                 <div class="w-100 bg-primary align-self-end rounded-bottom-4">
                   <h2 class="text-center text-white">Brisbane</h2>
                 </div>
               </div>
             </div>
             <div class="vh-45 p-2 col-sm-12 col-md-6 col-lg-4">
-              <div id="gold_coast" class="bg-cover h-100 d-flex rounded-bottom-4">
+              <div id="gold_coast" class="link-card bg-cover h-100 d-flex rounded-4" data-bs-toggle="modal"
+                data-bs-target="#goldCoastModal">
                 <div class="w-100 bg-primary align-self-end rounded-bottom-4">
                   <h2 class="text-center text-white">Goad Coast</h2>
                 </div>
               </div>
             </div>
             <div class="vh-45 p-2 col-sm-12 col-md-6 col-lg-4">
-              <div id="melbourne" class="bg-cover h-100 d-flex rounded-bottom-4">
+              <div id="melbourne" class="link-card bg-cover h-100 d-flex rounded-4" data-bs-toggle="modal"
+                data-bs-target="#melbourneModal">
                 <div class="w-100 bg-primary align-self-end rounded-bottom-4">
                   <h2 class="text-center text-white">Melbourne</h2>
                 </div>
               </div>
             </div>
             <div class="vh-45 p-2 col-sm-12 col-md-6 col-lg-4">
-              <div id="perth" class="bg-cover h-100 d-flex rounded-bottom-4">
+              <div id="perth" class="link-card bg-cover h-100 d-flex rounded-4" data-bs-toggle="modal"
+                data-bs-target="#perthModal">
                 <div class="w-100 bg-primary align-self-end rounded-bottom-4">
                   <h2 class="text-center text-white">Perth</h2>
                 </div>
               </div>
             </div>
             <div class="vh-45 p-2 col-sm-12 col-md-6 col-lg-4">
-              <div id="sidney" class="bg-cover h-100 d-flex rounded-bottom-4">
+              <div id="sidney" class="link-card bg-cover h-100 d-flex rounded-4" data-bs-toggle="modal"
+                data-bs-target="#sidneyModal">
                 <div class="w-100 bg-primary align-self-end rounded-bottom-4">
                   <h2 class="text-center text-white">Sidney</h2>
                 </div>
@@ -92,6 +98,7 @@
       </section>
     </div>
   </main>
+
   <footer>
     <div class="container text-center">
       <p>Desenvolvido por Rodrigo Polastro, 2024</p>
@@ -104,3 +111,44 @@
 </body>
 
 </html>
+
+
+<!-- ========== MODALS ========== -->
+
+<!-- ADELAIDE -->
+<div class="modal modal-lg fade" id="adelaideModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-3" id="exampleModalLabel">Adelaide</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Estado: Victoria</li>
+          <li>População: Aproximadamente 5 milhões</li>
+          <li>Tamanho: 9.992,5 km²</li>
+          <li>Riqueza: Melbourne é o principal centro financeiro da Austrália, com uma economia forte em setores como
+            finanças, educação, manufatura e tecnologia.</li>
+          <li>Visitantes por Ano: Cerca de 10 milhões.</li>
+        </ul>
+        <p>Sydney, a capital de Nova Gales do Sul, é uma cidade vibrante e cosmopolita conhecida por sua icônica Sydney
+          Opera House e pela ponte do Porto de Sydney. Situada em torno do majestoso Porto de Sydney, a cidade oferece
+          uma combinação única de atrações urbanas e belezas naturais deslumbrantes. Além dos marcos famosos, como a
+          Sydney Harbour Bridge e a praia de Bondi, os visitantes podem explorar os diversos bairros da cidade, cada um
+          com sua própria personalidade e charme. A gastronomia de classe mundial, a cena artística animada e as opções
+          de compras de alta qualidade completam a experiência em Sydney.</p>
+          <div class="d-flex flex-column align-items-center">
+            <h5>Vinícula Vale Barrossa</h5>
+            <img src="../images/cities/adelaide_vale_barrossa.webp" class="w-75">
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== END MODALS ========== -->

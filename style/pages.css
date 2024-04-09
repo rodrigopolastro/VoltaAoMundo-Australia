@@ -1,59 +1,101 @@
 /* =============== HOME ============= */
-#slide1{
+#slide1 {
   background-image: url("../images/home/australia_slide_1.jpg");
 }
 
-#slide2{
+#slide2 {
   background-image: url("../images/home/australia_slide_2.jpg");
 }
 
-#slide3{
+#slide3 {
   background-image: url("../images/home/australia_slide_3.jpg");
 }
 
 /* Links to the other pages */
-#cultureDiv{
+#cultureDiv {
   background-image: url("../images/culture/aborigenal_people.jpg");
 }
 
-#citiesDiv{
+#citiesDiv {
   background-image: url("../images/cities/sidney_cover.jpg");
 }
 
-#placesDiv{
+#placesDiv {
   background-image: url("../images/places/uluru.jpg");
 }
 
-#statisticsDiv{
+#statisticsDiv {
   background-image: url("../images/home/australia_flag.webp");
 }
 
 /* =============== CITIES ============= */
-#adelaide{
+#adelaide {
   background-image: url("../images/cities/adelaide_cover.webp");
 }
 
-#brisbane{
+#brisbane {
   background-image: url("../images/cities/brisbane_cover.jpg");
 }
 
-#gold_coast{
+#gold_coast {
   background-image: url("../images/cities/gold_coast_cover.jpg");
 }
 
-#melbourne{
+#melbourne {
   background-image: url("../images/cities/melbourne_cover.jpg");
 }
 
-#perth{
+#perth {
   background-image: url("../images/cities/perth_cover.jpg");
 }
 
-#sidney{
+#sidney {
   background-image: url("../images/cities/sidney_cover.jpg");
 }
 
 /* =============== STATISTICS ============= */
 td:first-child {
   font-weight: 650;
+}
+
+.bg-dark-blue {
+  background-color: rgb(3, 3, 58);
+}
+
+header {
+  background-color: rgb(3, 3, 58);
+}
+
+.learn-more-btn:hover {
+  background-color: rgb(6, 6, 139);
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+.nav-link,
+.navbar-brand {
+  color: white;
+}
+
+section {
+  background-color: #e5e5e5;
+}
+
+
+footer{
+  background-color: rgb(3, 3, 58);;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+}
+
+footer p {
+  font-weight: 500;
+  color: white;
 }

@@ -1,10 +1,11 @@
+.vh-90{
+  height: 90vh;
+}
+
 .min-vh-10{
   min-height: 10vh;
 }
 
-.min-vh-90{
-  min-height: 90vh;
-}
 
 .min-vh-100{
   min-height: 100vh;
@@ -18,19 +19,30 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* text-decoration: none; */
 }
 
 .link-card:hover{
   cursor: pointer;
   transform: scale(1.02);
   transition: all 300ms ease;
+  filter:   grayscale(0%);
 }
 
 
-#heroSection{
+#slide1{
   background-image: url("../images/home/australia_slide_1.jpg");
 }
+
+#slide2{
+  background-image: url("../images/home/australia_slide_2.jpg");
+}
+
+#slide3{
+  background-image: url("../images/home/australia_slide_3.jpg");
+}
+
+/* #heroSection{
+} */
 
 #cultureDiv{
   background-image: url("../images/culture/aborigenal_people.jpg");
@@ -46,4 +58,8 @@
 
 #statisticsDiv{
   background-image: url("../images/home/australia_flag.webp");
+}
+
+.title{
+  font-size: 5vw;
 }

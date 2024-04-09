@@ -39,18 +39,46 @@
     </nav>
   </header>
   <main>
-    <section id="heroSection" class="min-vh-90 bg-cover">
-      <!-- <div class="h-25"></div> -->
-      <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
-        <h1>Austrália</h1>
-        <a href="#linkCards" class="btn btn-primary">Conhecer Mais!</a>
+    <section id="heroSection" class="vh-90">
+      <div class="w-100 h-100">
+        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade h-100">
+          <div class="carousel-inner h-100">
+            <div class="carousel-item h-100 active">
+              <!-- image will be on the background -->
+              <div class="w-100 h-100 bg-cover py-5 d-flex flex-column justify-content-between align-items-center" id="slide1">
+                <div class="mt-5 p-5 bg-black rounded-4 d-flex flex-column "
+                  style="--bs-bg-opacity: 0.90;">
+                  <h1 class="title text-white">Austrália</h1>
+                </div>
+                <a href="#linkCards" class="btn btn-primary px-4">Conhecer Mais!</a>
+              </div>
+              <!-- <img src="images/home/australia_slide_1.jpg" class="d-block w-100" alt="..."> -->
+            </div>
+            <div class="carousel-item ">
+              <!-- image will be on the background -->
+              <div class="w-100 h-100 bg-cover d-flex flex-column justify-content-center align-items-center"
+                id="slide3">
+                <h1>Austrália</h1>
+                <a href="#linkCards" class="btn btn-primary">Conhecer Mais!</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!-- image will be on the background -->
+              <div class="w-100 h-100 bg-cover d-flex flex-column justify-content-center align-items-center"
+                id="slide3">
+                <h1>Austrália</h1>
+                <a href="#linkCards" class="btn btn-primary">Conhecer Mais!</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section id="linkCards" class="min-vh-100 d-flex align-items-center">
       <div class="container h-100 px-5">
         <div class="images-row row">
           <div class="col-md-6 p-2">
-            <a href="pages/culture.html" class="">
+            <a class="text-decoration-none" href="pages/culture.html">
               <div class="bg-cover link-card h-100 rounded-4 d-flex justify-content-center" id="cultureDiv">
                 <div class="w-100 bg-primary align-self-end rounded-bottom-4">
                   <h2 class="text-center text-white">Cultura</h2>
@@ -59,7 +87,7 @@
             </a>
           </div>
           <div class="col-md-6 p-2 ">
-            <a href="pages/cities.html">
+            <a class="text-decoration-none" href="pages/cities.html">
               <div class="bg-cover link-card h-100 rounded-4 d-flex justify-content-center teste" id="citiesDiv">
                 <div class="w-100 bg-primary align-self-end rounded-bottom-4">
                   <h2 class="text-center text-white">Cidades</h2>
@@ -70,7 +98,7 @@
         </div>
         <div class="images-row row">
           <div class="col-md-6 p-2 ">
-            <a href="pages/places.html">
+            <a class="text-decoration-none" href="pages/places.html">
               <div class="bg-cover link-card h-100 rounded-4 d-flex justify-content-center teste" id="placesDiv">
                 <div class="w-100 bg-primary align-self-end rounded-bottom-4">
                   <h2 class="text-center text-white">Onde Ir</h2>
@@ -79,7 +107,7 @@
             </a>
           </div>
           <div class="col-md-6 p-2 ">
-            <a href="pages/statistics.html">
+            <a class="text-decoration-none" href="pages/statistics.html">
               <div class="bg-cover link-card h-100 rounded-4 d-flex justify-content-center teste" id="statisticsDiv">
                 <div class="w-100 bg-primary align-self-end rounded-bottom-4">
                   <h2 class="text-center text-white">Dados e Estatísticas</h2>

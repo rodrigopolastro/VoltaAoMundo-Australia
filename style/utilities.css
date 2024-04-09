@@ -29,3 +29,22 @@
 .title{
   font-size: 5vw;
 }
+
+header{
+  background-color: rgb(3, 3, 58);
+}
+
+.bg-dark-blue{
+  background-color: rgb(3, 3, 58);
+}
+
+button
+
+.nav-link, .navbar-brand{
+  color: white;
+}
+
+.learn-more-btn:hover{
+  
+  background-color: rgb(6, 6, 139);
+}

@@ -2,103 +2,103 @@
 html,
 body,
 section {
-  background-color: #e5e5e5;
+    background-color: #e5e5e5;
 }
 
 header {
-  background-color: rgb(3, 3, 58);
+    background-color: rgb(3, 3, 58);
 }
 
 footer {
-  background-color: rgb(3, 3, 58);
-  height: 20vh;
-  display: flex;
-  align-items: center;
+    background-color: rgb(3, 3, 58);
+    height: 20vh;
+    display: flex;
+    align-items: center;
 }
 
 footer p {
-  font-weight: 500;
-  color: white;
+    font-weight: 500;
+    color: white;
 }
 
 a {
-  color: white;
+    color: white;
 }
 
 a:hover {
-  color: white;
+    color: white;
 }
 
 .nav-link,
 .navbar-brand {
-  color: white;
+    color: white;
 }
 
 /* =============== HOME ============= */
 #slide1 {
-  background-image: url("../images/home/australia_slide_1.jpg");
+    background-image: url("../images/home/australia_slide_1.jpg");
 }
 
 #slide2 {
-  background-image: url("../images/home/australia_slide_2.jpg");
+    background-image: url("../images/home/australia_slide_2.jpg");
 }
 
 #slide3 {
-  background-image: url("../images/home/australia_slide_3.jpg");
+    background-image: url("../images/home/australia_slide_3.jpg");
 }
 
 .learn-more-btn:hover {
-  background-color: rgb(6, 6, 139);
+    background-color: rgb(6, 6, 139);
 }
 
 /* Links to the other pages */
 #cultureDiv {
-  background-image: url("../images/culture/aborigenal_people.jpg");
+    background-image: url("../images/culture/aborigenal_people.jpg");
 }
 
 #citiesDiv {
-  background-image: url("../images/cities/sidney_cover.jpg");
+    background-image: url("../images/cities/sidney_cover.jpg");
 }
 
 #placesDiv {
-  background-image: url("../images/places/uluru.jpg");
+    background-image: url("../images/places/uluru.jpg");
 }
 
 #statisticsDiv {
-  background-image: url("../images/home/australia_flag.webp");
+    background-image: url("../images/home/australia_flag.webp");
 }
 
 /* =============== CITIES ============= */
 #adelaide {
-  background-image: url("../images/cities/adelaide_cover.webp");
+    background-image: url("../images/cities/adelaide_cover.webp");
 }
 
 #brisbane {
-  background-image: url("../images/cities/brisbane_cover.jpg");
+    background-image: url("../images/cities/brisbane_cover.jpg");
 }
 
 #gold_coast {
-  background-image: url("../images/cities/gold_coast_cover.jpg");
+    background-image: url("../images/cities/gold_coast_cover.jpg");
 }
 
 #melbourne {
-  background-image: url("../images/cities/melbourne_cover.jpg");
+    background-image: url("../images/cities/melbourne_cover.jpg");
 }
 
 #perth {
-  background-image: url("../images/cities/perth_cover.jpg");
+    background-image: url("../images/cities/perth_cover.jpg");
 }
 
 #sidney {
-  background-image: url("../images/cities/sidney_cover.jpg");
+    background-image: url("../images/cities/sidney_cover.jpg");
 }
 
 /* =============== CULTURE ============= */
 .blue-section {
-  color: rgb(194, 194, 194);
+    color: rgb(194, 194, 194);
 }
 
 /* =============== STATISTICS ============= */
 td:first-child {
-  font-weight: 650;
+    font-weight: 650;
 }

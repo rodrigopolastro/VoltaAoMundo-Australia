@@ -17,4 +17,3 @@ Este site - que está disponível [clicando aqui](https://rodrigopolastro.github
 - **ESTATÍSTICAS**: Conglomerado de dados estatísticos gerais sobre a Austrália que apresentam uma visão geral sobre a nação.
 
 ### Desenvolvido por Rodrigo Polastro da Silva, 2024
-

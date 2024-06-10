@@ -7,7 +7,7 @@ require '../components/header.html';
     <div class="w-100 d-flex flex-column align-items-center">
         <div class="w-75 my-4">
             <h3>Great Barrier Reef</h3>
-            <img src="../images/places/great_barrier_reef.webp" class="w-100 my-2">
+            <img src="../../assets/images/places/great_barrier_reef.webp" class="w-100 my-2">
             <p>Situado ao largo da costa de Queensland, o Great Barrier Reef é um dos locais mais espetaculares
                 do mundo
                 para mergulho e snorkeling. Com mais de 2.900 recifes individuais e 900 ilhas, este ecossistema
@@ -19,7 +19,7 @@ require '../components/header.html';
         </div>
         <div class="w-75 my-4">
             <h3>Sydney Opera House</h3>
-            <img src="../images/places/sydney_opera_house.jpeg" class="w-100 my-2">
+            <img src="../../assets/images/places/sydney_opera_house.jpeg" class="w-100 my-2">
             <p>Uma obra-prima da arquitetura moderna, o Sydney Opera House é um ícone internacionalmente
                 reconhecido e um
                 dos locais mais emblemáticos da Austrália. Projetado pelo arquiteto dinamarquês Jørn Utzon, o
@@ -32,7 +32,7 @@ require '../components/header.html';
         </div>
         <div class="w-75 my-4">
             <h3>Great Ocean Road</h3>
-            <img src="../images/places/great_ocean_road.jpg" class="w-100 my-2">
+            <img src="../../assets/images/places/great_ocean_road.jpg" class="w-100 my-2">
             <p> Esta lendária estrada costeira, que se estende por 243 quilômetros ao longo da costa sudoeste de
                 Victoria,
                 oferece algumas das vistas mais espetaculares da Austrália. Os viajantes podem testemunhar a
@@ -47,7 +47,7 @@ require '../components/header.html';
         </div>
         <div class="w-75 my-4">
             <h3>Uluru (Ayers Rock)</h3>
-            <img src="../images/places/uluru.jpg" class="w-100 my-2">
+            <img src="../../assets/images/places/uluru.jpg" class="w-100 my-2">
             <p>Localizado no Parque Nacional Uluru-Kata Tjuta, no Território do Norte, Uluru é uma das formações
                 rochosas
                 mais emblemáticas e sagradas da Austrália. Esta colossal monólito de arenito vermelho se destaca
@@ -59,7 +59,7 @@ require '../components/header.html';
         </div>
         <div class="w-75 my-4">
             <h3>Bondi Beach</h3>
-            <img src="../images/places/bondi_beach.jpg" class="w-100 my-2">
+            <img src="../../assets/images/places/bondi_beach.jpg" class="w-100 my-2">
             <p>Uma das praias mais famosas e movimentadas da Austrália, Bondi Beach é um paraíso para os amantes
                 do sol,
                 do mar e do surfe. Localizada a apenas 7 quilômetros do centro de Sydney, esta deslumbrante

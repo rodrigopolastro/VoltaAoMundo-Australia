@@ -159,6 +159,8 @@ require '../components/header.html';
         </div>
     </section>
 </div>
+
 <?php
+require '../components/comments.php';
 require '../components/footer.html';
 ?>

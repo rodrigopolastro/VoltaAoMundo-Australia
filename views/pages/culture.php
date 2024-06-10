@@ -30,7 +30,7 @@ require '../components/header.html';
                         acolhedora, que abraça tanto as diferenças quanto as semelhanças.</p>
                 </div>
                 <div class="col-lg-6">
-                    <img src="../images/culture/australians_laughing.jpg" class="w-100">
+                    <img src="../../assets/images/culture/australians_laughing.jpg" class="w-100">
                 </div>
             </div>
         </div>
@@ -42,7 +42,7 @@ require '../components/header.html';
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <img src="../images/culture/aborigenal_people.jpg" class="w-100">
+                    <img src="../../assets/images/culture/aborigenal_people.jpg" class="w-100">
                 </div>
                 <div class="col-lg-6">
                     <p>Os povos originários aborígenes da Austrália exercem uma influência profunda e duradoura
@@ -100,7 +100,7 @@ require '../components/header.html';
                         gastronômica única que reflete a rica tapeçaria cultural do país.</p>
                 </div>
                 <div class="col-lg-6">
-                    <img src="../images/culture/meat_pie.jpg" class="w-100">
+                    <img src="../../assets/images/culture/meat_pie.jpg" class="w-100">
                 </div>
             </div>
         </div>
@@ -112,7 +112,7 @@ require '../components/header.html';
             </div>
             <div class="row d-flex align-items-center">
                 <div class="col-lg-6">
-                    <img src="../images/culture/rugby.jfif" class="w-100">
+                    <img src="../../assets/images/culture/rugby.jfif" class="w-100">
                 </div>
                 <div class="col-lg-6">
                     <p>Os esportes desempenham um papel significativo na cultura australiana, com uma ampla
@@ -183,7 +183,7 @@ require '../components/header.html';
                     </p>
                 </div>
                 <div class="col-lg-6">
-                    <img src="../images/culture/australia_day.jpg" class="w-100">
+                    <img src="../../assets/images/culture/australia_day.jpg" class="w-100">
                 </div>
             </div>
         </div>
@@ -195,7 +195,7 @@ require '../components/header.html';
             </div>
             <div class="row d-flex align-items-center">
                 <div class="col-lg-6">
-                    <img src="../images/culture/aboriginal_art.jpg" class="w-100">
+                    <img src="../../assets/images/culture/aboriginal_art.jpg" class="w-100">
                 </div>
                 <div class="col-lg-6">
                     <p>A arte australiana é uma expressão vibrante da cultura diversificada e da paisagem única
@@ -233,6 +233,6 @@ require '../components/header.html';
     </section>
 </div>
 
-<?php 
-    require '../components/footer.html';
+<?php
+require '../components/footer.html';
 ?>

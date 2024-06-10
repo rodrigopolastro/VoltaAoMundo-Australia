@@ -41,7 +41,7 @@ require '../components/header.html';
     <div class="container h-100 p-4">
         <div class="min-vh-90 row">
             <div class="vh-45 col-md-6 p-2">
-                <a class="text-decoration-none" href="pages/culture.html">
+                <a class="text-decoration-none" href="./culture.php">
                     <div class="bg-cover link-card h-100 rounded-4 d-flex justify-content-center" id="cultureDiv">
                         <div class="w-100 bg-dark-blue align-self-end rounded-bottom-4">
                             <h2 class="text-center text-white">Cultura</h2>
@@ -50,7 +50,7 @@ require '../components/header.html';
                 </a>
             </div>
             <div class="vh-45 col-md-6 p-2">
-                <a class="text-decoration-none" href="pages/cities.html">
+                <a class="text-decoration-none" href="./cities.php">
                     <div class="bg-cover link-card h-100 rounded-4 d-flex justify-content-center teste" id="citiesDiv">
                         <div class="w-100 bg-dark-blue align-self-end rounded-bottom-4">
                             <h2 class="text-center text-white">Cidades</h2>
@@ -60,7 +60,7 @@ require '../components/header.html';
             </div>
 
             <div class="vh-45 col-md-6 p-2">
-                <a class="text-decoration-none" href="pages/places.html">
+                <a class="text-decoration-none" href="./places.php">
                     <div class="bg-cover link-card h-100 rounded-4 d-flex justify-content-center teste" id="placesDiv">
                         <div class="w-100 bg-dark-blue align-self-end rounded-bottom-4">
                             <h2 class="text-center text-white">Onde Ir</h2>
@@ -69,7 +69,7 @@ require '../components/header.html';
                 </a>
             </div>
             <div class="vh-45 col-md-6 p-2">
-                <a class="text-decoration-none" href="pages/statistics.html">
+                <a class="text-decoration-none" href="./statistics.php">
                     <div class="bg-cover link-card h-100 rounded-4 d-flex justify-content-center teste" id="statisticsDiv">
                         <div class="w-100 bg-dark-blue align-self-end rounded-bottom-4">
                             <h2 class="text-center text-white">Dados e Estatísticas</h2>

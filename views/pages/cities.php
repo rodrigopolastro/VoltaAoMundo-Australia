@@ -85,7 +85,7 @@ require '../components/header.html';
                     por seus vinhos de classe mundial e paisagens deslumbrantes.</p>
                 <div class="d-flex flex-column align-items-center">
                     <h5>Ponto Turístico: Vinícula Vale Barrossa</h5>
-                    <img src="../images/cities/adelaide_vale_barrossa.webp" class="w-75">
+                    <img src="../../assets/images/cities/adelaide_vale_barrossa.webp" class="w-75">
                 </div>
             </div>
             <div class="modal-footer">
@@ -125,7 +125,7 @@ require '../components/header.html';
                     internacionais.</p>
                 <div class="d-flex flex-column align-items-center">
                     <h5>Ponto Turístico: South Bank Parklands</h5>
-                    <img src="../images/cities/brisbane_south_bank_parklands.jpg" class="w-75">
+                    <img src="../../assets/images/cities/brisbane_south_bank_parklands.jpg" class="w-75">
                 </div>
             </div>
             <div class="modal-footer">
@@ -163,7 +163,7 @@ require '../components/header.html';
                     e o Parque Nacional Lamington, conhecido por suas trilhas para caminhadas e cachoeiras.</p>
                 <div class="d-flex flex-column align-items-center">
                     <h5>Ponto Turístico: DreamWorld Park</h5>
-                    <img src="../images/cities/gold_coast_dream_world_park.jpg" class="w-75">
+                    <img src="../../assets/images/cities/gold_coast_dream_world_park.jpg" class="w-75">
                 </div>
             </div>
             <div class="modal-footer">
@@ -204,7 +204,7 @@ require '../components/header.html';
                     música ao vivo.</p>
                 <div class="d-flex flex-column align-items-center">
                     <h5>Ponto Turístico: Melbourne Cricket Ground</h5>
-                    <img src="../images/cities/melbourne_cricket_ground.jpg" class="w-75">
+                    <img src="../../assets/images/cities/melbourne_cricket_ground.jpg" class="w-75">
                 </div>
             </div>
             <div class="modal-footer">
@@ -246,7 +246,7 @@ require '../components/footer.html';
                     mercado vibrante, e as praias intocadas de Rottnest Island.</p>
                 <div class="d-flex flex-column align-items-center">
                     <h5>Ponto Turístico: Kings Park</h5>
-                    <img src="../images/cities/perth_kings_park.jpg" class="w-75">
+                    <img src="../../assets/images/cities/perth_kings_park.jpg" class="w-75">
                 </div>
             </div>
             <div class="modal-footer">
@@ -287,7 +287,7 @@ require '../components/footer.html';
                     de compras de alta qualidade completam a experiência em Sydney.</p>
                 <div class="d-flex flex-column align-items-center">
                     <h5>Ponto Turístico: Sidney Opera House</h5>
-                    <img src="../images/cities/sidney_opera_house.webp" class="w-75">
+                    <img src="../../assets/images/cities/sidney_opera_house.webp" class="w-75">
                 </div>
             </div>
             <div class="modal-footer">

@@ -1,124 +1,58 @@
-<!doctype html>
-<html lang="pt-br">
+<?php
+require '../components/header.html';
+?>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Principais Cidades da Austrália</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style/utilities.css">
-    <link rel="stylesheet" href="../style/pages.css">
-</head>
-
-<body>
-    <header>
-        <nav class="navbar navbar-dark  navbar-expand-md min-vh-10">
-            <div class="container">
-                <a class="w-50 navbar-brand" href="#">
-                    <h3>Austrália</h3>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks"
-                    aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="w-50 collapse navbar-collapse" id="navbarLinks">
-                    <div class="w-100 d-flex justify-content-end">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link " href="../index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="culture.html">Cultura</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="cities.html">Cidades</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="places.html">Onde Ir</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="statistics.html">Estatísticas</a>
-                            </li>
-                        </ul>
+<div class="container">
+    <section class="p-2">
+        <h1 class="text-center display-4">Principais Cidades da Austrália</h1>
+        <div class="min-vh-90">
+            <div class="row">
+                <div class="vh-45 p-2 col-sm-12 col-md-6 col-lg-4">
+                    <div id="adelaide" class="link-card bg-cover h-100 d-flex rounded-4" data-bs-toggle="modal" data-bs-target="#adelaideModal">
+                        <div class="w-100 bg-dark-blue align-self-end rounded-bottom-4">
+                            <h2 class="text-center text-white">Adelaide</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="vh-45 p-2 col-sm-12 col-md-6 col-lg-4">
+                    <div id="brisbane" class="link-card bg-cover h-100 d-flex rounded-4" data-bs-toggle="modal" data-bs-target="#brisbaneModal">
+                        <div class="w-100 bg-dark-blue align-self-end rounded-bottom-4">
+                            <h2 class="text-center text-white">Brisbane</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="vh-45 p-2 col-sm-12 col-md-6 col-lg-4">
+                    <div id="gold_coast" class="link-card bg-cover h-100 d-flex rounded-4" data-bs-toggle="modal" data-bs-target="#goldCoastModal">
+                        <div class="w-100 bg-dark-blue align-self-end rounded-bottom-4">
+                            <h2 class="text-center text-white">Gold Coast</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="vh-45 p-2 col-sm-12 col-md-6 col-lg-4">
+                    <div id="melbourne" class="link-card bg-cover h-100 d-flex rounded-4" data-bs-toggle="modal" data-bs-target="#melbourneModal">
+                        <div class="w-100 bg-dark-blue align-self-end rounded-bottom-4">
+                            <h2 class="text-center text-white">Melbourne</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="vh-45 p-2 col-sm-12 col-md-6 col-lg-4">
+                    <div id="perth" class="link-card bg-cover h-100 d-flex rounded-4" data-bs-toggle="modal" data-bs-target="#perthModal">
+                        <div class="w-100 bg-dark-blue align-self-end rounded-bottom-4">
+                            <h2 class="text-center text-white">Perth</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="vh-45 p-2 col-sm-12 col-md-6 col-lg-4">
+                    <div id="sidney" class="link-card bg-cover h-100 d-flex rounded-4" data-bs-toggle="modal" data-bs-target="#sidneyModal">
+                        <div class="w-100 bg-dark-blue align-self-end rounded-bottom-4">
+                            <h2 class="text-center text-white">Sidney</h2>
+                        </div>
                     </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <main>
-        <div class="container">
-            <section class="p-2">
-                <h1 class="text-center display-4">Principais Cidades da Austrália</h1>
-                <div class="min-vh-90">
-                    <div class="row">
-                        <div class="vh-45 p-2 col-sm-12 col-md-6 col-lg-4">
-                            <div id="adelaide" class="link-card bg-cover h-100 d-flex rounded-4" data-bs-toggle="modal"
-                                data-bs-target="#adelaideModal">
-                                <div class="w-100 bg-dark-blue align-self-end rounded-bottom-4">
-                                    <h2 class="text-center text-white">Adelaide</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="vh-45 p-2 col-sm-12 col-md-6 col-lg-4">
-                            <div id="brisbane" class="link-card bg-cover h-100 d-flex rounded-4" data-bs-toggle="modal"
-                                data-bs-target="#brisbaneModal">
-                                <div class="w-100 bg-dark-blue align-self-end rounded-bottom-4">
-                                    <h2 class="text-center text-white">Brisbane</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="vh-45 p-2 col-sm-12 col-md-6 col-lg-4">
-                            <div id="gold_coast" class="link-card bg-cover h-100 d-flex rounded-4"
-                                data-bs-toggle="modal" data-bs-target="#goldCoastModal">
-                                <div class="w-100 bg-dark-blue align-self-end rounded-bottom-4">
-                                    <h2 class="text-center text-white">Gold Coast</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="vh-45 p-2 col-sm-12 col-md-6 col-lg-4">
-                            <div id="melbourne" class="link-card bg-cover h-100 d-flex rounded-4" data-bs-toggle="modal"
-                                data-bs-target="#melbourneModal">
-                                <div class="w-100 bg-dark-blue align-self-end rounded-bottom-4">
-                                    <h2 class="text-center text-white">Melbourne</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="vh-45 p-2 col-sm-12 col-md-6 col-lg-4">
-                            <div id="perth" class="link-card bg-cover h-100 d-flex rounded-4" data-bs-toggle="modal"
-                                data-bs-target="#perthModal">
-                                <div class="w-100 bg-dark-blue align-self-end rounded-bottom-4">
-                                    <h2 class="text-center text-white">Perth</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="vh-45 p-2 col-sm-12 col-md-6 col-lg-4">
-                            <div id="sidney" class="link-card bg-cover h-100 d-flex rounded-4" data-bs-toggle="modal"
-                                data-bs-target="#sidneyModal">
-                                <div class="w-100 bg-dark-blue align-self-end rounded-bottom-4">
-                                    <h2 class="text-center text-white">Sidney</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </div>
-    </main>
-
-    <footer>
-        <div class="container text-center">
-            <p>Desenvolvido por Rodrigo Polastro, 2024</p>
-            <p>Desenvolvimento de Software Multiplataforma - FATEC Itapira</p>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-</body>
-
-</html>
-
+    </section>
+</div>
 
 <!-- ========== MODALS ========== -->
 
@@ -279,6 +213,9 @@
         </div>
     </div>
 </div>
+<?php
+require '../components/footer.html';
+?>
 
 <!-- PERTH -->
 <div class="modal modal-lg fade" id="perthModal" tabindex="-1" aria-hidden="true">

@@ -21,7 +21,6 @@ CREATE TABLE Users (
 CREATE TABLE Pages (
     page_id INTEGER PRIMARY KEY AUTO_INCREMENT,
     page_name VARCHAR(100) UNIQUE NOT NULL,
-    page_url VARCHAR(100),
     created_at TIMESTAMP
 );
 

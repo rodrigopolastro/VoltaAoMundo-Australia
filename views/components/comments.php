@@ -6,8 +6,22 @@ $comments = getCommentsByPageName(CURRENT_PAGE_NAME);
 ?>
 
 <div class="container">
-    <h1><?php print_r($comments_number) ?> Comentários</h1>
-    <?php foreach ($comments as $comment) : ?>
-        <h4><?= $comment['content'] ?></h4>
-    <?php endforeach ?>
+    <div class="d-flex justify-content-center">
+        <div class="w-50">
+            <p class="ps-3 fs-2 fw-bold"><?php print_r($comments_number) ?> Comentários</p>
+            <div class="">
+                <?php foreach ($comments as $comment) : ?>
+                    <div class="py-2">
+                        <div class="bg-white rounded-3 p-3">
+                            <div class="d-flex justify-content-between">
+                                <p class="fs-5 fw-bold"><?= $comment['first_name'] ?> <?= $comment['last_name'] ?></p>
+                                <p><?= $comment['created_at'] ?></p>
+                            </div>
+                            <p><?= $comment['content'] ?></p>
+                        </div>
+                    </div>
+                <?php endforeach ?>
+            </div>
+        </div>
+    </div>
 </div>

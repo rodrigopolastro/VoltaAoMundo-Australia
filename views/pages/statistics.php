@@ -1,5 +1,6 @@
 <?php
 require '../components/header.html';
+define('CURRENT_PAGE_NAME', 'statistics');
 ?>
 
 <div class="container">

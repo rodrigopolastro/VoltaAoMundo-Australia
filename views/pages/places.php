@@ -1,5 +1,9 @@
 <?php
-require_once '../components/header.html';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/volta-ao-mundo-australia/helpers/full-path.php';
+require_once fullPath('views/components/header.html');
+require_once fullPath('backend/pages_queries.php');
+
+$current_page_id = getPageIdByName('places');
 ?>
 
 <div class="container">
@@ -77,5 +81,6 @@ require_once '../components/header.html';
 </div>
 
 <?php
+require_once '../components/comments.php';
 require_once '../components/footer.html';
 ?>

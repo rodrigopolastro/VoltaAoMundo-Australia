@@ -1,5 +1,9 @@
 <?php
-require_once '../components/header.html';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/volta-ao-mundo-australia/helpers/full-path.php';
+require_once fullPath('views/components/header.html');
+require_once fullPath('backend/pages_queries.php');
+
+$current_page_id = getPageIdByName('statistics');
 ?>
 
 <div class="container">

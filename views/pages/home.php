@@ -1,5 +1,5 @@
 <?php
-require '../components/header.html';
+require_once '../components/header.html';
 ?>
 
 <section id="heroSection" class="vh-90">
@@ -82,5 +82,5 @@ require '../components/header.html';
 </section>
 
 <?php
-require '../components/footer.html';
+require_once '../components/footer.html';
 ?>

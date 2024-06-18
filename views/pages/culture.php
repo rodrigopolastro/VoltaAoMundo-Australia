@@ -1,5 +1,5 @@
 <?php
-require '../components/header.html';
+require_once '../components/header.html';
 ?>
 
 <div class="container py-5">
@@ -234,5 +234,5 @@ require '../components/header.html';
 </div>
 
 <?php
-require '../components/footer.html';
+require_once '../components/footer.html';
 ?>

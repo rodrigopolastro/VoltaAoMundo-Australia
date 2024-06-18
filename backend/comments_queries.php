@@ -1,7 +1,7 @@
 <?php
-require fullPath('/database/connection.php');
+require_once fullPath('/database/connection.php');
 
-function getCommentsByPageName($page_name)
+function getCommentsByPageId($page_id)
 {
     global $connection;
     $statement = $connection->prepare(
@@ -13,33 +13,32 @@ function getCommentsByPageName($page_name)
             users.last_name
         FROM comments
         INNER JOIN users ON users.user_id = comments.user_id
-        INNER JOIN pages ON pages.page_id = comments.page_id
-        WHERE page_name = :page_name
+        WHERE page_id = :page_id
         AND is_approved = TRUE"
     );
 
-    $statement->bindValue(':page_name', $page_name);
+    $statement->bindValue(':page_id', $page_id);
     $statement->execute();
 
     $comments = $statement->fetchAll(PDO::FETCH_ASSOC);
     return $comments;
 }
 
-function countCommentsByPageName($page_name)
+function countCommentsByPageId($page_id)
 {
     global $connection;
     $statement = $connection->prepare(
         "SELECT 
             COUNT(*) AS comments_number
         FROM comments
-        INNER JOIN pages ON pages.page_id = comments.page_id
-        WHERE page_name = :page_name
+        WHERE page_id = :page_id
         AND is_approved = TRUE"
     );
 
-    $statement->bindValue(':page_name', $page_name);
+    $statement->bindValue(':page_id', $page_id);
     $statement->execute();
 
     $results = $statement->fetch();
     return $results['comments_number'];
 }
+

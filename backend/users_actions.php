@@ -38,7 +38,7 @@ switch ($_POST['action']) {
 
     case 'login':
         $user = getUserByEmail($_POST['email']);
-        if ($user && $user['user_password'] == hash('sha256', $_POST['password'])) {
+        if ($user && $user['user_password'] == hash('sha256', trim($_POST['password']))) {
             $_SESSION['user_id']         = $user['user_id'];
             $_SESSION['user_type']       = $user['user_type'];
             $_SESSION['user_first_name'] = $user['first_name'];
@@ -55,6 +55,13 @@ switch ($_POST['action']) {
             $query_string = '?login_status=incorrect_info';
             header('Location: /volta-ao-mundo-australia/views/pages/login.php' . $query_string);
         }
+        break;
+
+    case 'logout':
+        session_unset();
+        session_destroy();
+        header('Location: /volta-ao-mundo-australia/views/pages/login.php');
+        exit();
         break;
 
     default:

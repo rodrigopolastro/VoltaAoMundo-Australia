@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <div class="vh-100  d-flex justify-content-center align-items-center">
-            <div class="w-50 bg-primary p-5 rounded-3">
+            <div class="w-50 bg-secondary p-5 rounded-3">
                 <h1>Faça Login</h1>
                 <form action="../../backend/users_actions.php" method="post" id="login-form">
                     <input type="hidden" name="action" value="login">
@@ -28,6 +28,7 @@
                 <?php if (isset($_GET['login_status']) && $_GET['login_status'] == 'incorrect_info') : ?>
                     <p id="errorMessage">Usuário ou Senha incorretos!</p>
                 <?php endif; ?>
+                <p>Não possui uma conta? <a href="./sign-up.php">Cadastre-se</a></p>
             </div>
         </div>
     </div>

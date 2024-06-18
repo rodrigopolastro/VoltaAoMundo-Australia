@@ -1,5 +1,6 @@
 <?php
 require_once '../components/header.html';
+require_once '../../backend/session_authentication.php';
 ?>
 
 <section id="heroSection" class="vh-90">

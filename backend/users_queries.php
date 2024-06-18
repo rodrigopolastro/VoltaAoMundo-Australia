@@ -7,6 +7,7 @@ function getUserByEmail($user_email)
     $statement = $connection->prepare(
         "SELECT 
             user_types.type_name user_type,
+            users.user_id,
             users.user_email,
             users.user_password,
             users.first_name,

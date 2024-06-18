@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <div class="vh-100  d-flex justify-content-center align-items-center">
-            <div class="w-50 bg-primary p-5 rounded-3">
+            <div class="w-50 bg-secondary p-5 rounded-3">
                 <h1>Cadastre-se</h1>
                 <form action="../../backend/users_actions.php" method="post" id="login-form">
                     <input type="hidden" name="action" value="sign_up">
@@ -36,6 +36,7 @@
                 <?php if (isset($_GET['sign_up_status']) && $_GET['sign_up_status'] == 'already_registered') : ?>
                     <p id="errorMessage">Usuário já cadastrado!</p>
                 <?php endif; ?>
+                <p>Já possui uma conta? <a href="./login.php">Entre</a></p>
             </div>
         </div>
     </div>

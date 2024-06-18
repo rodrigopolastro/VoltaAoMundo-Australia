@@ -43,6 +43,13 @@
                         </ul>
                     </div>
                 </div>
+                <div class="d-flex">
+                    <!-- <a href="../pages/my-profile.php" class="btn btn-primary">Meu perfil</a> -->
+                    <form method="POST" action="../../backend/users_actions.php">
+                        <input type="hidden" name="action" value="logout">
+                        <input type="submit" value="Sair" class="btn btn-primary">
+                    </form>
+                </div>
             </div>
         </nav>
     </header>

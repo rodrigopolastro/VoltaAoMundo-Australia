@@ -42,3 +42,26 @@ function countCommentsByPageId($page_id)
     return $results['comments_number'];
 }
 
+function createComment($comment)
+{
+    global $connection;
+    $statement = $connection->prepare(
+        "INSERT INTO comments (
+            user_id, 
+            page_id, 
+            content,
+            is_approved
+        ) VALUES (
+            :user_id, 
+            :page_id, 
+            :content,
+            :is_approved
+        )"
+    );
+
+    $statement->bindValue(':user_id', $comment['user_id']);
+    $statement->bindValue(':page_id', $comment['page_id']);
+    $statement->bindValue(':content', $comment['content']);
+    $statement->bindValue(':is_approved', $comment['is_approved']);
+    $statement->execute();
+}

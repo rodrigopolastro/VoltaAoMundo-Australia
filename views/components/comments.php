@@ -1,14 +1,27 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT'] . '/volta-ao-mundo-australia/helpers/full-path.php';
-require fullPath('database/queries/comments_queries.php');
-$comments_number = countCommentsByPageName(CURRENT_PAGE_NAME);
-$comments = getCommentsByPageName(CURRENT_PAGE_NAME);
+require_once $_SERVER['DOCUMENT_ROOT'] . '/volta-ao-mundo-australia/helpers/full-path.php';
+require_once fullPath('backend/comments_queries.php');
+$comments_number = countCommentsByPageId($current_page_id);
+$comments = getCommentsByPageId($current_page_id);
 ?>
 
 <div class="container">
     <div class="d-flex justify-content-center">
         <div class="w-50">
-            <p class="ps-3 fs-2 fw-bold"><?php print_r($comments_number) ?> Comentários</p>
+            <p class="ps-3 fs-2 fw-bold"><?= $comments_number ?> Comentários</p>
+            <div class="py-2">
+                <div class="bg-white rounded-3 p-3">
+                    <form method="POST" action="../../backend/comments_actions.php">
+                        <div class="form-floating">
+                            <input type="hidden" name="action" value="insert_comment">
+                            <input type="hidden" name="page_id" value="<?= $current_page_id ?>">
+                            <textarea required id="txtAreaComment" name="comment_content" class="form-control" style="height: 100px"></textarea>
+                            <label for="txtAreaComment">Deixe um Comentário</label>
+                            <input type="submit" value="Comentar" class="btn btn-primary">
+                        </div>
+                    </form>
+                </div>
+            </div>
             <div class="">
                 <?php foreach ($comments as $comment) : ?>
                     <div class="py-2">

@@ -84,6 +84,9 @@ function createComment($comment)
     );
 
     $statement->bindValue(':user_id', $comment['user_id']);
+    $statement->bindValue(':page_id', $comment['page_id']);
+    $statement->bindValue(':content', $comment['content']);
+    $statement->bindValue(':is_approved', $comment['is_approved']);
     $statement->execute();
 }
 

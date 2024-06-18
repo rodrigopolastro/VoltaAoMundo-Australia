@@ -1,6 +1,27 @@
 <?php
 require_once fullPath('/database/connection.php');
 
+function getAllUsers()
+{
+    global $connection;
+    $statement = $connection->prepare(
+        "SELECT 
+            user_types.type_name user_type,
+            users.user_id,
+            users.user_email,
+            users.user_password,
+            users.first_name,
+            users.last_name
+        FROM users
+        INNER JOIN user_types ON user_types.user_type_id = users.user_type_id"
+    );
+
+    $statement->execute();
+
+    $users = $statement->fetchAll(PDO::FETCH_ASSOC);
+    return $users;
+}
+
 function getUserByEmail($user_email)
 {
     global $connection;

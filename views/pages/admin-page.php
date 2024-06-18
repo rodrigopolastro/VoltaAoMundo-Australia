@@ -6,10 +6,14 @@ if ($_SESSION['user_type'] == 'user') {
 }
 
 require_once fullPath('backend/comments_queries.php');
-require_once '../components/header.html';
+require_once fullPath('backend/users_queries.php');
+require_once fullPath('backend/pages_queries.php');
+require_once fullPath('views/components/header.html');
+
+$users = getAllUsers();
+$pages = getAllPages();
 
 $comments = getAllComments();
-
 if ($comments) {
     $approved_comments = [];
     $not_approved_comments = [];
@@ -24,7 +28,7 @@ if ($comments) {
 
 ?>
 
-<div class="container">
+<div class="container min-vh-90">
     <div class="row">
         <div class="col-8">
             <div>
@@ -87,8 +91,52 @@ if ($comments) {
             </div>
         </div>
         <div class="col-4">
-            <h3>Estatísticas</h3>
+            <div>
+                <h3>Estatísticas</h3>
+            </div>
+            <button data-bs-toggle="modal" data-bs-target="#importCommentsModal" class="btn btn-primary">Importar Comentários</button>
+            <div class="modal modal-lg fade" id="importCommentsModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-3">Brisbane</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form method="POST" enctype="multipart/form-data" action="../../backend/comments_actions.php">
+                                <input type="hidden" name="action" value="import_comments">
+                                <div class="">
+                                    <label for="commentsFile" class="form-label">Arquivo de Importação</label>
+                                    <input class="form-control" id="commentsFile" type="file" name="json_file" accept=".json" required>
+                                    <select required id="" name="user_id" class="form-control">
+                                        <?php foreach ($users as $user) : ?>
+                                            <option value='<?= $user['user_id'] ?>'>
+                                                <?= $user['first_name'] ?> <?= $user['last_name'] ?>
+                                            </option>
+                                        <?php endforeach ?>
+                                    </select>
+                                    <select required id="" name="page_id" class="form-control">
+                                        <?php foreach ($pages as $page) : ?>
+                                            <option value='<?= $page['page_id'] ?>'>
+                                                <?= $page['page_name'] ?>
+                                            </option>
+                                        <?php endforeach ?>
+                                    </select>
+                                    <input type="submit" value="Importar" class="btn btn-primary">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
 </div>
+
+<?php
+require_once '../components/footer.html';
+?>

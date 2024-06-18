@@ -13,7 +13,8 @@ function getAllUsers()
             users.first_name,
             users.last_name
         FROM users
-        INNER JOIN user_types ON user_types.user_type_id = users.user_type_id"
+        INNER JOIN user_types ON user_types.user_type_id = users.user_type_id
+        WHERE user_types.type_name = 'user'"
     );
 
     $statement->execute();

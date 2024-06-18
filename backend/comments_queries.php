@@ -16,7 +16,8 @@ function getAllComments()
             users.last_name user_last_name
         FROM comments
         INNER JOIN users ON users.user_id = comments.user_id
-        INNER JOIN pages ON pages.page_id = comments.page_id"
+        INNER JOIN pages ON pages.page_id = comments.page_id
+        ORDER BY comments.created_at"
     );
 
     $statement->execute();
@@ -38,10 +39,36 @@ function getCommentsByPageId($page_id)
         FROM comments
         INNER JOIN users ON users.user_id = comments.user_id
         WHERE page_id = :page_id
-        AND is_approved = TRUE"
+        AND is_approved = TRUE
+        "
     );
 
     $statement->bindValue(':page_id', $page_id);
+    $statement->execute();
+
+    $comments = $statement->fetchAll(PDO::FETCH_ASSOC);
+    return $comments;
+}
+
+function getCommentsByUserId($user_id)
+{
+    global $connection;
+    $statement = $connection->prepare(
+        "SELECT 
+        comments.comment_id,
+        comments.user_id,
+        comments.created_at,
+        comments.content,
+        comments.is_approved,
+        pages.page_name
+    FROM comments
+    INNER JOIN users ON users.user_id = comments.user_id
+    INNER JOIN pages ON pages.page_id = comments.page_id
+    WHERE comments.user_id = :user_id
+    ORDER BY comments.created_at DESC"
+    );
+
+    $statement->bindValue(':user_id', $user_id);
     $statement->execute();
 
     $comments = $statement->fetchAll(PDO::FETCH_ASSOC);

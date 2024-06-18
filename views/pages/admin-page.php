@@ -8,7 +8,7 @@ if ($_SESSION['user_type'] == 'user') {
 require_once fullPath('backend/comments_queries.php');
 require_once fullPath('backend/users_queries.php');
 require_once fullPath('backend/pages_queries.php');
-require_once fullPath('views/components/header.html');
+require_once fullPath('views/components/header.php');
 
 $users = getAllUsers();
 $pages = getAllPages();

@@ -1,7 +1,6 @@
 <?php
-require_once '../components/header.html';
+require_once '../components/header.php';
 require_once '../../backend/session_authentication.php';
-echo $_SESSION['user_first_name'];
 ?>
 
 <section id="heroSection" class="vh-90">

@@ -8,7 +8,10 @@ $comments = getCommentsByPageId($current_page_id);
 <div class="container">
     <div class="d-flex justify-content-center">
         <div class="w-50">
-            <p class="ps-3 fs-2 fw-bold"><?= $comments_number ?> Comentários</p>
+            <p class="ps-3 fs-2 fw-bold">
+                <?= $comments_number ?>
+                <?= $comments_number == 1 ? 'Comentário': 'Comentários'?>
+            </p>
             <div class="py-2">
                 <div class="bg-white rounded-3 p-3">
                     <form method="POST" action="../../backend/comments_actions.php">

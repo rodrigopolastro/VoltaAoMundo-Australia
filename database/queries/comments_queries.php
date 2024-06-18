@@ -21,6 +21,25 @@ function getCommentsByPageName($page_name)
     $statement->bindValue(':page_name', $page_name);
     $statement->execute();
 
-    $results = $statement->fetchAll(PDO::FETCH_ASSOC);
-    return $results;
+    $comments = $statement->fetchAll(PDO::FETCH_ASSOC);
+    return $comments;
+}
+
+function countCommentsByPageName($page_name)
+{
+    global $connection;
+    $statement = $connection->prepare(
+        "SELECT 
+            COUNT(*) AS comments_number
+        FROM comments
+        INNER JOIN pages ON pages.page_id = comments.page_id
+        WHERE page_name = :page_name
+        AND is_approved = TRUE"
+    );
+
+    $statement->bindValue(':page_name', $page_name);
+    $statement->execute();
+
+    $results = $statement->fetch();
+    return $results['comments_number'];
 }

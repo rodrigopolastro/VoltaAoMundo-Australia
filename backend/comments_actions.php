@@ -24,6 +24,6 @@ switch ($_POST['action']) {
         break;
 
     default:
-        $error_message = 'Invalid action informed: action = ' . $action;
+        $error_message = 'Invalid action informed: action = ' . $_POST['action'];
         return $error_message;
 }

@@ -29,9 +29,12 @@ switch ($_POST['action']) {
             $_SESSION['user_type']       = 'user';
             $_SESSION['user_first_name'] = $user['first_name'];
             $_SESSION['user_last_name']  = $user['last_name'];
+            $created_at = new DateTimeImmutable();
+            $_SESSION['user_created_at']  = $created_at->format('d/m/Y');
+            // var_dump($created_at); 
 
-            header("Location: /volta-ao-mundo-australia/views/pages/home.php");
-            exit();
+            // header("Location: /volta-ao-mundo-australia/views/pages/home.php");
+            // exit();
 
             break;
         }
@@ -43,6 +46,12 @@ switch ($_POST['action']) {
             $_SESSION['user_type']       = $user['user_type'];
             $_SESSION['user_first_name'] = $user['first_name'];
             $_SESSION['user_last_name']  = $user['last_name'];
+            $created_at = new DateTimeImmutable(
+                $user['created_at'],
+                new DateTimeZone('America/Sao_Paulo')
+            );
+            // var_dump($created_at);
+            $_SESSION['user_created_at'] = $created_at->format('d/m/Y');
 
             if ($user['user_type'] == 'admin') {
                 // admin page

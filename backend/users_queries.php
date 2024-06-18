@@ -11,7 +11,8 @@ function getAllUsers()
             users.user_email,
             users.user_password,
             users.first_name,
-            users.last_name
+            users.last_name,
+            users.created_at
         FROM users
         INNER JOIN user_types ON user_types.user_type_id = users.user_type_id
         WHERE user_types.type_name = 'user'"
@@ -33,7 +34,8 @@ function getUserByEmail($user_email)
             users.user_email,
             users.user_password,
             users.first_name,
-            users.last_name
+            users.last_name,
+            users.created_at
        FROM users
        INNER JOIN user_types ON user_types.user_type_id = users.user_type_id
        WHERE user_email = :user_email"

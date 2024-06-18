@@ -1,6 +1,30 @@
 <?php
 require_once fullPath('/database/connection.php');
 
+function getAllComments()
+{
+    global $connection;
+    $statement = $connection->prepare(
+        "SELECT 
+            comments.comment_id,
+            comments.user_id,
+            comments.created_at,
+            comments.content,
+            comments.is_approved,
+            pages.page_name,
+            users.first_name user_first_name,
+            users.last_name user_last_name
+        FROM comments
+        INNER JOIN users ON users.user_id = comments.user_id
+        INNER JOIN pages ON pages.page_id = comments.page_id"
+    );
+
+    $statement->execute();
+
+    $comments = $statement->fetchAll(PDO::FETCH_ASSOC);
+    return $comments;
+}
+
 function getCommentsByPageId($page_id)
 {
     global $connection;
@@ -60,8 +84,31 @@ function createComment($comment)
     );
 
     $statement->bindValue(':user_id', $comment['user_id']);
-    $statement->bindValue(':page_id', $comment['page_id']);
-    $statement->bindValue(':content', $comment['content']);
-    $statement->bindValue(':is_approved', $comment['is_approved']);
+    $statement->execute();
+}
+
+function approveComment($comment_id)
+{
+    global $connection;
+    $statement = $connection->prepare(
+        "UPDATE comments
+        SET is_approved = TRUE
+        WHERE comment_id = :comment_id"
+    );
+
+    $statement->bindValue(':comment_id', $comment_id);
+    $statement->execute();
+}
+
+function disapproveComment($comment_id)
+{
+    global $connection;
+    $statement = $connection->prepare(
+        "UPDATE comments
+        SET is_approved = FALSE
+        WHERE comment_id = :comment_id"
+    );
+
+    $statement->bindValue(':comment_id', $comment_id);
     $statement->execute();
 }

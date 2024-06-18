@@ -23,7 +23,7 @@
                         <label for="txtPassword" class="form-label">Senha</label>
                         <input type="password" id="txtPassword" name="password" class="form-control">
                     </div>
-                    <input type="submit" value="Cadastrar" class="btn btn-success">
+                    <input type="submit" value="Entrar" class="btn btn-success">
                 </form>
                 <?php if (isset($_GET['login_status']) && $_GET['login_status'] == 'incorrect_info') : ?>
                     <p id="errorMessage">Usuário ou Senha incorretos!</p>

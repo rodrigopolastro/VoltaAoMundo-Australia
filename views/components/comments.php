@@ -5,7 +5,7 @@ $comments_number = countCommentsByPageId($current_page_id);
 $comments = getCommentsByPageId($current_page_id);
 ?>
 
-<div class="container">
+<div class="container my-5">
     <div class="d-flex justify-content-center">
         <div class="w-50">
             <p class="ps-3 fs-2 fw-bold">
@@ -18,7 +18,7 @@ $comments = getCommentsByPageId($current_page_id);
                         <div class="form-floating">
                             <input type="hidden" name="action" value="insert_comment">
                             <input type="hidden" name="page_id" value="<?= $current_page_id ?>">
-                            <textarea required id="txtAreaComment" name="comment_content" class="form-control" style="height: 100px"></textarea>
+                            <textarea required id="txtAreaComment" name="comment_content" class="form-control mb-3" style="height: 100px"></textarea>
                             <label for="txtAreaComment">Deixe um Comentário</label>
                             <input type="submit" value="Comentar" class="btn btn-primary">
                         </div>

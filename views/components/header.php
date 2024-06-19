@@ -14,7 +14,7 @@
     <header>
         <nav class="navbar navbar-dark  navbar-expand-md min-vh-10">
             <div class="container d-flex justify-content-between">
-                <div>
+                <div class="d-flex align-items-center">
                     <a class=" navbar-brand" href="#">
                         <h3>Austrália</h3>
                     </a>

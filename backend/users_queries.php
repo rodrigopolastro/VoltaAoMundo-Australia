@@ -48,6 +48,23 @@ function getUserByEmail($user_email)
     return $user;
 }
 
+function countAllUsers()
+{
+    global $connection;
+    $statement = $connection->prepare(
+        "SELECT 
+            COUNT(*) AS users_number
+        FROM users
+        INNER JOIN user_types ON user_types.user_type_id = users.user_type_id
+        WHERE user_types.type_name = 'user'"
+    );
+
+    $statement->execute();
+
+    $results = $statement->fetch();
+    return $results['users_number'];
+}
+
 function createUser($user)
 {
     var_dump($user);

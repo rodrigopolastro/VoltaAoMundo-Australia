@@ -7,7 +7,7 @@ function getAllPages()
     $statement = $connection->prepare(
         "SELECT 
             page_id,
-            page_name
+            page_display_name
         FROM pages"
     );
 

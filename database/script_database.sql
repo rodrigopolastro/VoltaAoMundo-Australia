@@ -32,15 +32,15 @@ INSERT INTO Users (user_type_id, user_email, user_password, first_name, last_nam
 CREATE TABLE Pages (
     page_id INTEGER PRIMARY KEY AUTO_INCREMENT NOT NULL,
     page_name VARCHAR(100) UNIQUE NOT NULL,
+    page_display_name VARCHAR(100) NOT NULL,
     created_at TIMESTAMP
 );
 
-INSERT INTO Pages (page_name) VALUES 
-('cities'),
-('culture'),
-('home'),
-('places'),
-('statistics');
+INSERT INTO Pages (page_name, page_display_name) VALUES 
+('cities', 'Cidades'),
+('culture', 'Cultura'),
+('places', 'Onde Ir'),
+('statistics', 'Estatísticas');
 
 CREATE TABLE Comments (
     comment_id INTEGER PRIMARY KEY AUTO_INCREMENT NOT NULL,

@@ -11,13 +11,13 @@ function getAllComments()
             comments.created_at,
             comments.content,
             comments.is_approved,
-            pages.page_name,
+            pages.page_display_name,
             users.first_name user_first_name,
             users.last_name user_last_name
         FROM comments
         INNER JOIN users ON users.user_id = comments.user_id
         INNER JOIN pages ON pages.page_id = comments.page_id
-        ORDER BY comments.created_at"
+        ORDER BY comments.created_at DESC"
     );
 
     $statement->execute();
@@ -40,7 +40,7 @@ function getCommentsByPageId($page_id)
         INNER JOIN users ON users.user_id = comments.user_id
         WHERE page_id = :page_id
         AND is_approved = TRUE
-        "
+        ORDER BY comments.created_at DESC"
     );
 
     $statement->bindValue(':page_id', $page_id);
@@ -60,7 +60,7 @@ function getCommentsByUserId($user_id)
         comments.created_at,
         comments.content,
         comments.is_approved,
-        pages.page_name
+        pages.page_display_name
     FROM comments
     INNER JOIN users ON users.user_id = comments.user_id
     INNER JOIN pages ON pages.page_id = comments.page_id
@@ -75,6 +75,21 @@ function getCommentsByUserId($user_id)
     return $comments;
 }
 
+function countAllComments()
+{
+    global $connection;
+    $statement = $connection->prepare(
+        "SELECT 
+            COUNT(*) AS comments_number
+        FROM comments"
+    );
+
+    $statement->execute();
+
+    $results = $statement->fetch();
+    return $results['comments_number'];
+}
+
 function countCommentsByPageId($page_id)
 {
     global $connection;
@@ -87,6 +102,24 @@ function countCommentsByPageId($page_id)
     );
 
     $statement->bindValue(':page_id', $page_id);
+    $statement->execute();
+
+    $results = $statement->fetch();
+    return $results['comments_number'];
+}
+
+function countCommentsByUserId($user_id)
+{
+    global $connection;
+    $statement = $connection->prepare(
+        "SELECT 
+            COUNT(*) AS comments_number
+        FROM comments
+        WHERE user_id = :user_id
+        AND is_approved = TRUE"
+    );
+
+    $statement->bindValue(':user_id', $user_id);
     $statement->execute();
 
     $results = $statement->fetch();
